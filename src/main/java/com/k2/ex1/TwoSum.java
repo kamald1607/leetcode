@@ -3,10 +3,16 @@ package com.k2.ex1;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Arrays;
 
 public class TwoSum {
     public static void main(String[] args) {
-        
+        // demo usage: prints indices for input [2,7,11,15] target 9 -> [0, 1]
+        TwoSum solver = new TwoSum();
+        int[] nums = {2, 7, 11, 15};
+        int target = 9;
+        int[] result = solver.twoSum(nums, target);
+        System.out.println("twoSum(" + Arrays.toString(nums) + ", " + target + ") -> " + Arrays.toString(result));
     }
 
     public int[] twoSum(int[] nums, int target) {
